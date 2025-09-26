@@ -5,11 +5,11 @@ const MaskGroup = () => {
     <>
       <div className="pt-[88px] w-full z-0 ">
         <img src={img} alt="" className="w-full" />
-        <div className=" sm:absolute sm:max-w-[643px]  flex flex-col gap-y-1 bg-[#FFF3E3] z-20 left-[785px] top-[195px] pt-[62px] pl-[39px] pr-[43px] pb-[37px]">
+        <div className=" sm:absolute sm:max-w-[643px]     flex flex-col gap-y-1 bg-[#FFF3E3] z-20 left-[785px] top-[195px] pt-[62px] pl-[39px] pr-[43px] pb-[37px]">
           <div className="flex flex-col justify-between min-h-[344px]">
             <div>
               <span className="tracking-[3px]">New Arrival</span>
-              <h1 className="text-[#b88e2f] sm:text-[52px] text-[48px] font-black w-[400px] ">
+              <h1 className="text-[#b88e2f] sm:text-[52px] text-[48px] font-black w-[380px] ">
                 Discover Our New Collection
               </h1>
               <span>

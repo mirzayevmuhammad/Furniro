@@ -6,7 +6,7 @@ import RoomSection from "../components/Rooms";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <MaskGroup />
       <div className="sm:ml-[131px] sm:mr-[126px] px-[17px] mt-[57px] mb-[69px]">
         <Browse />
