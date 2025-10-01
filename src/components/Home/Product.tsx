@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ProductCard from "./ui/ProductCard";
+import ProductCard from "../ui/ProductCard";
 
 const products = [
   {
@@ -110,7 +110,7 @@ const products = [
   },
 ];
 
-export default function Products() {
+const Products = () => {
   const [visibleCount, setVisibleCount] = useState(8);
 
   const showMore = () => {
@@ -139,4 +139,6 @@ export default function Products() {
       )}
     </div>
   );
-}
+};
+
+export default Products;

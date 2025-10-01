@@ -1,8 +1,8 @@
-import Browse from "../components/Browse";
-import Forniture from "../components/Forniture";
-import MaskGroup from "../components/MaskGroup";
-import Product from "../components/Product";
-import RoomSection from "../components/Rooms";
+import Browse from "../components/Home/Browse";
+import Forniture from "../components/Home/Forniture";
+import MaskGroup from "../components/Home/MaskGroup";
+import Product from "../components/Home/Product";
+import RoomSection from "../components/Home/Rooms";
 
 const HomePage = () => {
   return (

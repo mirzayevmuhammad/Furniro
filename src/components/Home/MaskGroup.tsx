@@ -1,5 +1,5 @@
-import Button from "./ui/Button";
-import img from "../assets/image/maskgroup.svg";
+import Button from "../ui/Button";
+import img from "../../assets/image/maskgroup.svg";
 const MaskGroup = () => {
   return (
     <>
