@@ -1,7 +1,15 @@
+import Form from "../components/Contact/Form";
+import Main from "../components/Contact/Main";
+import Info from "../components/ui/Info";
+
 const ContactPage = () => {
   return (
     <>
-      <div>Contact</div>
+      <div>
+        <Main />
+        <Form />
+        <Info />
+      </div>
     </>
   );
 };

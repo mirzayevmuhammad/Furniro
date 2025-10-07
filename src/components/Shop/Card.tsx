@@ -223,7 +223,7 @@ const Card = () => {
         ))}
       </div>
 
-      <div className="flex  justify-center mt-8 gap-3">
+      <div className="flex  justify-center  gap-3 my-13 ">
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
           <button
             key={num}

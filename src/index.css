@@ -6,6 +6,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.white-spin .ant-spin-dot-item {
+  background-color: white !important;
+}
+
+
 ::-webkit-scrollbar {
   scrollbar-color: #b88e2f;
   scrollbar-width: thin;

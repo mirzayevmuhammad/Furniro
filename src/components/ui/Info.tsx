@@ -1,4 +1,4 @@
-import Icon from "../ui/Icon";
+import Icon from "./Icon";
 
 const Info = () => {
   return (
@@ -8,7 +8,9 @@ const Info = () => {
           <Icon.cub />
           <div className="flex flex-col gap-y-[3px] justify-center">
             <h5 className="font-medium text-[25px]">High Quality</h5>
-            <span className="text-[17px] opacity-50">crafted from top materials</span>
+            <span className="text-[17px] opacity-50">
+              crafted from top materials
+            </span>
           </div>
         </div>
         <div className="flex gap-x-3">

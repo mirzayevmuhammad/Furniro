@@ -1,17 +1,13 @@
 interface ButtonProps {
   text?: string;
   buttonClassName: string;
-  icon?: boolean;
 }
-const Button = ({ text, buttonClassName }: ButtonProps) => {
+
+const Button = ({text, buttonClassName }: ButtonProps) => {
   return (
-    <>
-      <button
-        className={`font-black text-white bg-[#b88e2f] hover:opacity-85 active:opacity-100 transition-all ${buttonClassName}`}
-      >
-        {text}
-      </button>
-    </>
+    <button
+      className={`flex justify-center items-center gap-2 font-black cursor-pointer text-white bg-[#b88e2f] hover:opacity-85 active:opacity-100 transition-all ${buttonClassName}`}
+    >{text}</button>
   );
 };
 

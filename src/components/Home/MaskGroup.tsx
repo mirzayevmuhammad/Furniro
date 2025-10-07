@@ -9,7 +9,7 @@ const MaskGroup = () => {
           <div className="flex flex-col justify-between min-h-[344px]">
             <div>
               <span className="tracking-[3px]">New Arrival</span>
-              <h1 className="text-[#b88e2f] sm:text-[52px] text-[48px] font-black w-[380px] ">
+              <h1 className="text-[#b88e2f] sm:text-[52px] text-[47px] font-black w-[380px] ">
                 Discover Our New Collection
               </h1>
               <span>
@@ -19,7 +19,7 @@ const MaskGroup = () => {
             </div>
             <Button
               text="BUY NOW"
-              buttonClassName="max-w-[222px] px-[72px] py-[25px]"
+              buttonClassName="max-w-[222px] px-[72px] py-[25px] mt-1.5"
             />
           </div>
         </div>
