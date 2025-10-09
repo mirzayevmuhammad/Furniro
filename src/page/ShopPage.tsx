@@ -1,15 +1,15 @@
 import Card from "../components/Shop/Card";
 import Catalog from "../components/Shop/Catalog";
-import Main from "../components/Shop/Main";
 import Info from "../components/ui/Info";
+import Main from "../components/ui/Main";
 const ShopPage = () => {
   return (
     <>
       <div className="">
-        <Main />
+        <Main tittle="Shop" span="Home" span1="Shop" />
         <Catalog />
         <Card />
-        <Info/>
+        <Info />
       </div>
     </>
   );

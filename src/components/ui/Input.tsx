@@ -9,7 +9,9 @@ interface InputProps {
   isTextarea?: boolean;
   maxLength?: number;
   value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+  onChange: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -53,7 +55,7 @@ const Input: React.FC<InputProps> = ({
             />
             {typeof maxLength === "number" && (
               <span
-                className={`absolute bottom-3 left-5 text-[15px] ${
+                className={`absolute bottom-3 sm:left-117 right-2 text-[15px] ${
                   isOverLimit ? "text-red-500" : "text-[#9F9F9F]"
                 }`}
               >
