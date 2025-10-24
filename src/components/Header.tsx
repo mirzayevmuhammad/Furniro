@@ -31,11 +31,10 @@ const Header = () => {
     },
   ]);
 
-const totalPrice = basketItems.reduce((sum, item) => sum + item.price, 0);
+  const totalPrice = basketItems.reduce((sum, item) => sum + item.price, 0);
 
   return (
     <>
-      {/* HEADER */}
       <header className="flex justify-between  px-[35px] sm:pl-[55px] sm:pr-[0px] sm:py-8 py-5 bg-white w-full fixed z-40 shadow-md">
         <div>
           <img src="logo.svg" alt="logo" />
@@ -102,7 +101,6 @@ const totalPrice = basketItems.reduce((sum, item) => sum + item.price, 0);
         </div>
       </header>
 
-      {/* DRAWER */}
       {drawer && (
         <>
           <div
@@ -110,7 +108,6 @@ const totalPrice = basketItems.reduce((sum, item) => sum + item.price, 0);
               drawer ? "translate-x-0" : "translate-x-full"
             }`}
           >
-            {/* HEADER */}
             <div className="flex justify-between pb-3 border-b-2 border-[#bd973f91]">
               <span className="text-[25px] font-medium capitalize text-[#bd973f]">
                 {drawer === "menu"
@@ -131,9 +128,7 @@ const totalPrice = basketItems.reduce((sum, item) => sum + item.price, 0);
               </button>
             </div>
 
-            {/* DRAWER CONTENT */}
             <div className="pt-3 flex flex-col gap-y-4">
-              {/* MENU */}
               {drawer === "menu" && (
                 <div className="flex flex-col gap-y-5">
                   <nav className="flex flex-col gap-y-3 pt-2">
@@ -156,7 +151,6 @@ const totalPrice = basketItems.reduce((sum, item) => sum + item.price, 0);
                     })}
                   </nav>
 
-                  {/* Mobile action buttons */}
                   <div className="flex justify-between pt-5 border-t mt-3">
                     <button onClick={() => toggleDrawer("user")}>
                       <Icon.user />
@@ -174,7 +168,6 @@ const totalPrice = basketItems.reduce((sum, item) => sum + item.price, 0);
                 </div>
               )}
 
-              {/* USER */}
               {drawer === "user" && (
                 <div className="flex flex-col gap-y-4">
                   <p className="text-gray-600">Welcome, Guest</p>
@@ -184,7 +177,6 @@ const totalPrice = basketItems.reduce((sum, item) => sum + item.price, 0);
                 </div>
               )}
 
-              {/* SEARCH */}
               {drawer === "search" && (
                 <div className="flex flex-col gap-y-4">
                   <input
@@ -198,7 +190,6 @@ const totalPrice = basketItems.reduce((sum, item) => sum + item.price, 0);
                 </div>
               )}
 
-              {/* LIKE */}
               {drawer === "like" && (
                 <div className="flex flex-col gap-y-5">
                   {[1, 2].map((i) => (
@@ -227,7 +218,6 @@ const totalPrice = basketItems.reduce((sum, item) => sum + item.price, 0);
                 </div>
               )}
 
-              {/* BASKET */}
               {drawer === "basket" && (
                 <div className="flex flex-col gap-y-5">
                   {basketItems.length > 0 ? (
@@ -283,7 +273,6 @@ const totalPrice = basketItems.reduce((sum, item) => sum + item.price, 0);
             </div>
           </div>
 
-          {/* OVERLAY */}
           <div
             onClick={closeAll}
             className="fixed inset-0 bg-black/40 z-40 transition-opacity duration-300"

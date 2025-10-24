@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Footer = () => {
   return (
     <>
@@ -12,18 +14,22 @@ const Footer = () => {
         <div className="flex sm:flex-row flex-col mb-[47px] sm:mt-0 mt-9">
           <div className="flex flex-col mr-[147px] gap-y-9 sm:mt-0 mt-5">
             <span className="opacity-50 mb-5">Links</span>
-            <span className="cursor-pointer font-medium hover:opacity-70 active:opacity-100">
-              Home
-            </span>
-            <span className="cursor-pointer font-medium hover:opacity-70 active:opacity-100">
-              Shop
-            </span>
-            <span className="cursor-pointer font-medium hover:opacity-70 active:opacity-100">
-              About
-            </span>
-            <span className="cursor-pointer font-medium hover:opacity-70 active:opacity-100">
-              Contact
-            </span>
+            {["/", "/shop", "/about", "/contact"].map((path, i) => {
+              const names = ["Home", "Shop", "About", "Contact"];
+              return (
+                <NavLink
+                  key={i}
+                  to={path}
+                  className={({ isActive }) =>
+                    `text-[19px] font-medium cursor-pointer  hover:opacity-70 active:opacity-100 ${
+                      isActive ? "text-[#bd973f]" : "text-black"
+                    } hover:opacity-70`
+                  }
+                >
+                  {names[i]}
+                </NavLink>
+              );
+            })}
           </div>
           <div className="flex flex-col mr-[73px] gap-y-9 sm:mt-0 mt-9">
             <span className="opacity-50 mb-5">Help</span>

@@ -59,7 +59,7 @@ const Input: React.FC<InputProps> = ({
                   isOverLimit ? "text-red-500" : "text-[#9F9F9F]"
                 }`}
               >
-                {count}/{maxLength}
+                {count}/{maxLength-1}
               </span>
             )}
           </>
@@ -71,7 +71,7 @@ const Input: React.FC<InputProps> = ({
             value={value}
             onChange={onChange}
             placeholder={placeholder}
-            maxLength={maxLength}
+            maxLength={maxLength }
             className={`placeholder:text-[17px] sm:w-[530px] w-full outline-0 placeholder:text-[#9F9F9F] border-2 rounded-[17px] py-[22px] px-[31px] border-[#9F9F9F] ${inputClassName}`}
           />
         )}
